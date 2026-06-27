@@ -9,7 +9,7 @@ const HERO_IMAGE =
   'https://cdn.poehali.dev/projects/6c20b9fb-4124-45a5-b34d-eaafeb38a401/files/ce095481-7816-43a3-9d51-0adb552b2330.jpg';
 
 const socials = [
-  { name: 'Telegram', icon: 'Send', color: 'from-sky-400 to-blue-500', href: '#' },
+  { name: 'Мой ЛС', icon: 'Send', color: 'from-sky-400 to-blue-500', href: 'https://t.me/muxipu' },
   { name: 'Instagram', icon: 'Instagram', color: 'from-pink-500 to-purple-600', href: '#' },
   { name: 'YouTube', icon: 'Youtube', color: 'from-red-500 to-rose-600', href: '#' },
   { name: 'Email', icon: 'Mail', color: 'from-emerald-400 to-cyan-500', href: '#' },
@@ -209,6 +209,8 @@ const Index = () => {
                     <a
                       key={s.name}
                       href={s.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="glass group flex flex-col items-start gap-3 rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.07]"
                     >
                       <div
